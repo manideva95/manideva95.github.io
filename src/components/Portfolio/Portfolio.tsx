@@ -101,7 +101,7 @@ export function Portfolio() {
               </div>
             </header>
             <div className="body">
-              <h3>Portfólio V1</h3>
+              <h3>Portfolio V1</h3>
               <p>Uma versão alternativa de My Portfolio, utilizando VueJs.
               </p>
             </div>

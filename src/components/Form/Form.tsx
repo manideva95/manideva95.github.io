@@ -22,7 +22,7 @@ export function Form() {
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success('Email enviado com sucesso!', {
+      toast.success('Email sent successfully!', {
         position: toast.POSITION.BOTTOM_LEFT,
         pauseOnFocusLoss: false,
         closeOnClick: true,
@@ -34,13 +34,13 @@ export function Form() {
   if (state.succeeded) {
     return (
       <ContainerSucces>
-        <h3>Obrigado por entrar em contato!</h3>
+        <h3>Thank you for contacting!</h3>
         <button
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
         >
-          Voltar ao topo
+          Back to the top
         </button>
         <ToastContainer />
       </ContainerSucces>
