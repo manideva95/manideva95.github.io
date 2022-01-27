@@ -3,7 +3,21 @@ import { Container } from "./styles"
 import ScrollAnimation from "react-animate-on-scroll"
 import Illustration from "../../assets/illustration.svg"
 import { NavHashLink } from "react-router-hash-link"
+import { useEffect, useRef } from "react";
+import { init } from "ityped";
+
 export function Hero() {
+  const textRef = useRef() as React.MutableRefObject<HTMLInputElement>
+
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: ["React", "React Native", "Node Js", "Full Stack"],
+    });
+  }, []);
   return (
     <Container id="home">
       <div className="hero-text">
@@ -14,7 +28,10 @@ export function Hero() {
           <h1>Mani Deva</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer</h3>
+          {/* <h3>Full Stack Developer</h3> */}
+          <h3>
+            <span ref={textRef}></span> Developer
+          </h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">I'm a computer technician with a focus on web development with JavaScript.</p>

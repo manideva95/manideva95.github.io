@@ -7,7 +7,9 @@ import { Portfolio } from "../Portfolio/Portfolio";
 
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
+import mongoIcon from "../../assets/mongodbLeaf-icon.svg"
 import htmlIcon from "../../assets/html-icon.svg";
+import socketIcon from "../../assets/socket-io.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import mysqlIcon from "../../assets/mysql-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
@@ -156,18 +158,28 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                {
-                  "src": cssIcon,
-                  "width": 20,
-                  "height": 20
-                },
+                // {
+                //   "src": cssIcon,
+                //   "width": 20,
+                //   "height": 20
+                // },
                 {
                   "src": htmlIcon,
                   "width": 20,
                   "height": 20
                 },
                 {
+                  "src": vscodeIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
                   "src": jsIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": socketIcon,
                   "width": 20,
                   "height": 20
                 },
@@ -197,7 +209,7 @@ export function Main() {
                   "height": 20
                 },
                 {
-                  "src": vscodeIcon,
+                  "src": mongoIcon,
                   "width": 20,
                   "height": 20
                 },
