@@ -43,6 +43,9 @@ export function Hero() {
           </BrowserRouter>
         </ScrollAnimation>
       </div>
+      <a href="https://app.daily.dev/manideva">
+        <img src="https://api.daily.dev/devcards/fe6bd88d1c5a42099ee4ed4bbf0cc5f7.png?r=1bh" width="400" alt="Deva's Dev Card" />
+      </a>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
           <img src={Illustration} alt="Ilustração" />
